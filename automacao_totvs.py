@@ -27,3 +27,5 @@ try:
             print('Erro no if encontrar_img')     
 except pyautogui.ImageNotFoundException:
     print('Imagem não encontrada')     
+
+
