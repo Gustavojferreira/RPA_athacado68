@@ -21,7 +21,7 @@ def realizar_download():
                 pyautogui.click()  #clique após mover o mouse
                 print("Imagem encontrada e download realizado.")
             else:
-                print('Erro no if encontrar_img')     
+                print('Erro em (automacao_totvs) in line 16')     
     except pyautogui.ImageNotFoundException:
         print('Imagem não encontrada')
    
