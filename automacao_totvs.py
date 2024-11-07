@@ -23,13 +23,15 @@ def realizar_download():
             else:
                 print('Erro em (automacao_totvs) in line 16')     
         #Fecha a pagina do banco quando concluir os downloads        
-        pyautogui.moveTo()
+        pyautogui.moveTo(1004,11)
         pyautogui.click()
     except pyautogui.ImageNotFoundException:
         print('Imagem não encontrada')
 
 # vai fazer as inserção de dados no totvs
 def importar_arquivo():
+    
     print('A')
-   
+
+
 
