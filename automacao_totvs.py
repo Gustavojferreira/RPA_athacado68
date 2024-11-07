@@ -21,17 +21,46 @@ def realizar_download():
                 pyautogui.click()  #clique após mover o mouse
                 print("Imagem encontrada e download realizado.")
             else:
-                print('Erro em (automacao_totvs) in line 16')     
+                print('Erro em (automacao_totvs) in line 16')  
+                   
         #Fecha a pagina do banco quando concluir os downloads        
         pyautogui.moveTo(1004,11)
         pyautogui.click()
     except pyautogui.ImageNotFoundException:
         print('Imagem não encontrada')
 
-# vai fazer as inserção de dados no totvs
+# vai fazer as inserção de dados no totvs e fechar a aplicação totvs no final
 def importar_arquivo():
+
+    time.sleep(4)
+    #para abrir a rotina#
+    pyautogui.click(109,705)
+    pyautogui.write("1502") 
+    pyautogui.press('enter')
+    #fim para abrir rotina
     
-    print('A')
+    #preencher campos#
+    time.sleep(10) #tempo para a rotina Iniciar
+    pyautogui.write("1")#Campo da filial
+    pyautogui.press('tab')
+    pyautogui.write('341')#Campo do caixa/
+    pyautogui.press('tab')
+    pyautogui.write("cobs")#Campo moeda
+
+    #
+    # LIDAR COM O ARQUIVO QUE FOI BAIXADO
+    # 
+
+    pyautogui.moveTo(805,249)#botão "PROCESSAR"
+
+    #
+    #Tem que fechar a rotina
+    #
+
+
+  
+    
+
 
 
 
